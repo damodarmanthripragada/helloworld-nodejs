@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  console.log('Hello world received a request.');
+  console.log('Hello world received a request, testing the req res.');
 
   const target = process.env.TARGET || 'World';
   res.send('Hello Damodar Manthripragada ${target}!');
